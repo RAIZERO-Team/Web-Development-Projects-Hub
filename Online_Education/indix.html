@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Project1</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <section class="flex">
+            <a href="#home" class="logo">Educ</a>
+            <nav class="navbar">
+                <a href="home">Home</a>
+                <a href="about">About us</a>
+                <a href="courses">Courses</a>
+                <a href="contact">Contact</a>
+            </nav>
+
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </section>
+
+    </header>
+<section class="home" id="home">
+<div class="row">
+    <div class="content">
+        <h3>online <span>education</span></h3>
+        <a href="#contact" class="btn">Contact</a>
+    </div>
+    <div class="image">
+        <img src="./3787062.jpg" alt="">
+    </div>
+</div>
+</section>
+
+<section class="count">
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="content">
+                <h3>150+</h3>
+                <p>courses</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-user-graduate"></i>
+            <div class="content">
+                <h3>1300+</h3>
+                <p>students</p>
+            </div>
+        </div>
+
+<div class="box">
+            <i class="fas fa-chalkboard-user"></i>
+            <div class="content">
+                <h3>80+</h3>
+                <p>instructors</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-face-smile"></i>
+            <div class="content">
+                <h3>100%</h3>
+                <p>satisfacation</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="row">
+        <div class="image">
+            <img src="./OIUFT90.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>Our team is the best team. We work with the utmost professionalism and seriousness.
+                 We pay attention to the smallest details in any track. </p>
+             <a href="#contact" class="btn">contact us</a>
+        </div>
+    </div>
+</section>
+
+<section class="courses" id="courses">
+    <h1 class="heading">our <span>courses</span></h1>
+    <div class="swiper course-slider">
+        <div class="swiper-wrapper">
+            <div class=" swiper-slide slide">
+                <img src="./uiux_text_2.jpg" alt="">
+                <h3>UI/UX Design</h3>
+                <p>focuses on creating visually appealing and user-friendly digital experiences</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="./web.jpg" alt="">
+                <h3>Web Development</h3>
+                <p>is the process of building and maintaining websites and web applications. It consists of front-end development and back-end development</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="./desk-office-with-online-marketing-business-concept.jpg" alt="">
+                <h3>Digital Marketing</h3>
+                <p>is the promotion of products, services, or brands using online channels such as social media, search engines, email, and websites.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="./data analystic.jpg" alt="">
+                <h3>Data Analytics</h3>
+                <p> is the process of analyzing raw data to find patterns, trends, and insights that help in decision-making.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="./workplace-2230698_1280.jpg" alt="">
+                <h3>Graphic Design</h3>
+                <p> is the art of creating visual content to communicate messages effectively. It combines typography, images, colors, and layouts to design logos, posters, advertisements, and digital graphics.</p>
+            </div>
+
+            <div class="swiper-slide slide">
+                <img src="./istockphoto-2035601113-1024x1024.jpg" alt="">
+                <h3>Cybersecurity</h3>
+                <p>is the practice of protecting systems, networks, and data from cyber threats and attacks</p>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h1 class="heading"><span>contact</span>us</h1>
+    <div class="row">
+        <form action="" method="post">
+            <span>your name</span>
+            <input type="text" required placeholder="Enter your full name" maxlength="50" 
+            name="name" class="box">
+            <span>your email</span>
+            <input type="email" required placeholder="Enter your email" maxlength="50" 
+            name="email" class="box">
+            <span>your number</span>
+            <input type="number" required placeholder="Enter your full name"  
+            name="number" class="box" onkeypress="if(this.value.length==10) return false;">
+            <span>select course</span>
+            <select name="courses" class="box" required>
+                <option value="" disabled selected>select the course</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Data Analytics">Data Analytics</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+            </select>
+            <span>select gender</span>
+            <div class="radio">
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">male</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">female</label>
+            </div>
+            <input type="submit" value="send message" class="btn" name="send">
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <section>
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-instagram"></a>
+        </div>
+        <div class="credit">&copy; copyRigth @ 2025 | all Rights reseved!</div>
+    </section>
+</footer>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
