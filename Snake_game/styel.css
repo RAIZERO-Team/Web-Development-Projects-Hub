@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#game-board {
+    background-color: rgb(2, 27, 75);
+    width: 90vmin;
+    height: 90vmin;
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(21, 1fr);
+}
+
+.snake {
+    background: white;
+    border: 0.2em solid black;
+}
+
+.food {
+    background: rgb(214, 108, 22);
+    border: 0.2em solid black;
+}
